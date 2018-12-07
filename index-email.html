@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        /*Inline styles*/
+        .wrapper {
+            width: 100%;
+            table-layout: fixed;
+            font-weight: 200;
+            position: relative;
+        }
+
+        .wrapper-inner {
+            width: 100%;
+            background-color: #EDF1F3;
+            max-width: 670px;
+            Margin: 0 auto;
+            padding: 0 50px;
+        }
+
+        table {
+            border-spacing: 0;
+            font-family: sans-serif;
+        }
+
+        td {
+            padding: 0;
+        }
+
+        p {
+            Margin: 0;
+        }
+
+        .header p {
+            text-align: center;
+            padding: 1%;
+            font-weight: 500;
+            font-size: 11px;
+            text-transform: uppercase;
+        }
+
+        a {
+            color: #0072F6;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+
+
+        /*--- End Outer Table 1 --*/
+        .main-table-first {
+            width: 100%;
+            max-width: 610px;
+            Margin: 0 auto;
+            background-color: #FFF;
+            margin-top: 25px;
+        }
+
+
+        /*--- Start Two Column Sections --*/
+        .two-column {
+            text-align: center;
+            font-size: 0;
+            padding: 5px 0 0 0;
+            margin: 50px, 0, 0;
+            position: relative;
+        }
+
+        .two-column .section1 {
+            width: 100%;
+            max-width: 300px;
+            display: inline-block;
+            vertical-align: top;
+            z-index: 10;
+        }
+
+        .two-column .content {
+            font-size: 16px;
+            line-height: 20px;
+            text-align: justify;
+            padding: 25px;
+            padding-bottom: 0px;
+        }
+
+        .content {
+            width: 100%;
+            padding-top: 20px;
+            text-align: justify;
+        }
+
+        .center {
+            display: table;
+            padding: 0 50px;
+        }
+
+        .orange {
+            color: #FE6A33 !important;
+            font-weight: 500 !important;
+            padding-bottom: 15px;
+        }
+
+        img {
+            border: 0;
+
+        }
+
+
+        img.logo {
+            float: left;
+            Margin-left: 5%;
+            max-width: 150px !important;
+        }
+
+        #callout {
+            float: right;
+            Margin: 4% 5% 2% 0;
+            height: auto;
+            overflow: hidden;
+        }
+
+        #callout img {
+            max-width: 20px;
+        }
+
+        .social {
+            list-style-type: none;
+            Margin-top: 1%;
+            padding: 0;
+        }
+
+        .social li {
+            display: inline-block;
+        }
+
+        .social li img {
+            max-width: 15px;
+            Margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        /*--- Start Outer Table Banner Image, Text & Button --*/
+        .image img {
+            padding-top: 30px;
+            width: 50px;
+        }
+
+        .main-table {
+            width: 100%;
+            max-width: 610px;
+            margin: 0 auto;
+            background-color: #FFF;
+        }
+
+        .one-column .inner-td {
+            font-size: 16px;
+            line-height: 20px;
+            text-align: justify;
+            margin: 0 auto;
+            padding-top: 50px;
+        }
+
+        .inner-td {
+            padding: 10px;
+            margin: 0;
+            overflow: hidden;
+            width: 400px;
+        }
+
+        .h3 {
+            text-align: center;
+            font-size: 21px;
+            font-weight: 500;
+            Margin: 12px;
+            Margin-bottom: 8px;
+            color: black;
+        }
+
+        p.center {
+            text-align: justify;
+            max-width: 580px;
+            line-height: 24px;
+            padding-bottom: 20px;
+            position: relative;
+            z-index: 100;
+        }
+
+        p.sub {
+            padding-bottom: 20px;
+            font-size: 1.2rem;
+            text-align: center;
+            margin: 0 auto;
+            font-weight: 200;
+        }
+
+        .button-holder-center {
+            text-align: center;
+            Margin: 5% 2% 3% 0;
+        }
+
+        .button-holder-icon {
+            float: left;
+            Margin: 5% 0 3% 0;
+        }
+
+        .btn {
+            font-size: 15px;
+            font-weight: 600;
+            background: #FFF;
+            color: #176DFF;
+            text-decoration: none;
+            padding: 6px 12px;
+            border-radius: 30px;
+        }
+
+        /*--- Start Two Column Image & Text Sections --*/
+
+        .two-column img {
+            max-width: 100px;
+            height: auto;
+            position: relative;
+        }
+
+        .two-column .text {
+            padding: 10px 0;
+        }
+
+        /*--- Start 3 Column Image & Text Section --*/
+
+        .three-column {
+            text-align: center;
+            font-size: 0;
+            padding: 10px 0 30px 0;
+        }
+
+        .three-column .section {
+            width: 100%;
+            max-width: 200px;
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        .three-column .content {
+            font-size: 16px;
+            line-height: 20px;
+        }
+
+        .three-column img {
+            width: 100%;
+            max-width: 125px;
+            height: auto;
+        }
+
+
+        /*--- Start Bottom One Column Section --*/
+        .inner-bottom {
+            padding: 22px;
+        }
+
+        .light-blue {
+            background-color: #009DFB;
+            height: 566px;
+            float: left;
+            z-index: 100;
+            position: relative;
+        }
+
+        .dark-blue {
+            background-color: #176DFF;
+            height: 566px;
+            max-width: 325px;
+            top: 100px;
+            right: 0px;
+            float: right;
+            position: absolute;
+            z-index: 1;
+        }
+
+        .num {
+            border-radius: 100%;
+            width: 20px;
+            padding: 5px;
+            float: right;
+            border: 1px solid white;
+            margin: 0 10px;
+            text-align: center;
+            color: white;
+        }
+
+        .h1 {
+            text-align: center !important;
+            font-size: 25px !important;
+            font-weight: 600;
+            line-height: 45px;
+            Margin: 12px 0 20px 0;
+            color: #4A4A4A;
+        }
+
+        .rtable .h1 {
+            color: #5E6163;
+            font-size: 20px !important;
+            font-weight: 500;
+        }
+
+        p.logo-text {
+            padding-bottom: 15px;
+            color: #5E6163;
+            font-size: 25px !important;
+            font-weight: 500;
+            margin: 0 auto;
+        }
+
+        p.last-text {
+            font-size: 12px;
+            text-align: left;
+            font-weight: 500;
+            color: #5E6163;
+        }
+
+        p.last-text a {
+            display: inline-block;
+        }
+
+        .paddingRight {
+            margin-left: 20px;
+        }
+
+
+        .rtable .center {
+            text-align: center;
+            margin: 0 auto;
+        }
+
+        .inner-bottom p {
+            font-size: 16px;
+            line-height: 24px;
+            text-align: justify;
+        }
+
+        /*--- Start Footer Section --*/
+        .footer {
+            background-color: #92A0A8;
+            Margin: 0 auto;
+        }
+
+        .footer img {
+            max-width: 135px;
+            Margin: 0 auto;
+            display: block;
+            padding: 4% 0 1% 0;
+        }
+
+        p.footer {
+            text-align: center;
+            color: #FFF !important;
+            padding: 5%;
+            font-size: 12px;
+            font-weight: 600;
+        }
+
+        .last-comp {
+            padding-left: 25px;
+        }
+
+        .icons {
+            padding-bottom: 10px;
+        }
+
+        .icon-home {
+            width: 25px;
+        }
+
+        .icon-download {
+            width: 50px;
+        }
+
+        .white-font p {
+            color: white;
+            padding-bottom: 10px;
+            font-weight: 400;
+        }
+
+        .blocks {
+            display: inline-block;
+        }
+
+        .inlineb {
+            display: inline-block;
+        }
+
+
+        img.icon-main {
+            padding: 0;
+            margin: 0 auto;
+            max-width: 200px;
+            top: 40px;
+            left: 20px;
+            overflow: hidden;
+        }
+
+        img.icon-main2 {
+            padding: 0;
+            margin: 0 auto;
+            max-width: 250px;
+            left: 40px;
+        }
+
+        .clearfix::after {
+
+            clear: both;
+            display: block;
+            padding-bottom: 20px;
+        }
+
+        div.seperate {
+            background-color: #ECF0F3;
+            padding: 10px;
+        }
+
+        /*--- Media Queries --*/
+        @media screen and (max-width: 400px) {
+            .h1 {
+                font-size: 22px;
+            }
+
+            .two-column .column,
+            .three-column .column {
+                max-width: 100% !important;
+            }
+        }
+
+        @media screen and (min-width: 401px) and (max-width: 400px) {
+
+            .two-column .column {
+                max-width: 50% !important;
+            }
+
+            .three-column .column {
+                max-width: 33% !important;
+            }
+
+            p.center {
+                text-align: left;
+            }
+        }
+
+        @media screen and (max-width:768px) {
+            .dark-blue {
+                height: 566px;
+                z-index: 100;
+                display: block;
+                width: 100%;
+                top: 0px;
+                max-width: 100%;
+                position: relative;
+            }
+
+            .two-column .icon-main {
+                padding: 0;
+                margin: 0 auto;
+                max-width: 300px;
+                top: 50px;
+            }
+
+            img.icon-main2 {
+                padding: 0;
+                margin: 0 auto;
+                max-width: 300px;
+                left: 175px;
+            }
+
+            img.logo {
+                float: none !important;
+                margin-left: 0% !important;
+                max-width: 200px !important;
+            }
+
+            #callout {
+                float: none !important;
+                margin: 0% 0% 0% 0;
+                height: auto;
+                text-align: center;
+                overflow: hidden;
+            }
+
+            #callout img {
+                max-width: 26px !important;
+            }
+
+            .two-column .section1 {
+                width: 100% !important;
+                max-width: 100% !important;
+                display: block;
+                vertical-align: top;
+                z-index: 10;
+
+            }
+
+            .light-blue .inner-td {
+                padding-bottom: 0px;
+            }
+
+            img.img-responsive {
+                width: 100% !important;
+                height: auto !important;
+                max-width: 100% !important;
+            }
+
+            .content {
+                width: 100%;
+                padding-top: 0px !important;
+            }
+        }
+    </style>
+    <title>Securly Inc</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="wrapper-inner">
+            <div class="section">
+                <table width="100%">
+                    <tr>
+                        <td class="inner-td">
+                            <table class="content">
+                                <tr>
+                                    <td align="center">
+                                        <img src="Securly-Logo/securly-logo-revamp-copy.png" class="logo" alt='logo'>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <table class="main-table">
+                <tr>
+                    <td align="center" class="image">
+                        <img src="Email-PSD-JPEG/image/waving-hand-sign_1f44b.png" alt='icon'>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="one-column">
+                        <table width="100%">
+                            <tr>
+                                <td class="inner-td">
+                                    <p class="h3">Hello [Enter School Name Here] Parents,</p>
+                                    <p class="sub center">We so enjoyed meeting you all!</p>
+                                    <p class="center">The online safety and well-being of students is an increasingly
+                                        stressful parenting challenge. We loved talking with you to share ideas around
+                                        how to make that important job easier at home and school.</p>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <!--- End Heading, Paragraph & Button Section -->
+                <tr>
+                    <td class="two-column">
+                        <table width="100%">
+                            <tr>
+                                <td align='center'>
+                                    <p class="h3 orange center">A Quick Recap!</p>
+                                </td>
+                            </tr>
+                        </table>
+                        <div class="section1 light-blue">
+                            <table width="100%">
+                                <tr>
+                                    <td class="inner-td">
+                                        <table class="content">
+                                            <tr>
+                                                <td>
+                                                    <div class="num">1</div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class='icon-home'>
+                                                    <img src="Email-PSD-JPEG/image/home-app.png" class="" alt='image'>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text white-font">
+                                                    <p><b>SecurlyHOME app</b></p>
+                                                    <p>Our FREE app provides a parents view into your child's internet
+                                                        activity</p>
+                                                    <p>Download a <b>FREE</b> app Now!</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class='icon-download'>
+                                                    <img src="Email-PSD-JPEG/image/App-store.png" class="" alt='image'>
+                                                    <img src="Email-PSD-JPEG/image/Android.png" class="" alt='image'>
+                                                </td>
+                                            </tr>
+                                        </table>
+
+                                        <img src="Email-PSD-JPEG/image/iPhone+hand.png" class="icon-main" alt='image'>
+
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <!--- End First Column of Two Columns -->
+                        <div class="section dark-blue">
+                            <table width="100%">
+                                <tr>
+                                    <td class="inner-td">
+                                        <table class="content">
+                                            <tr>
+                                                <td>
+                                                    <div class="num">2</div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class='icon-home'>
+                                                    <img src="Email-PSD-JPEG/image/plugNplay-logo.png" class="" alt='image'>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text white-font">
+                                                    <p>Filter out bad websites (and more) for all the devices at home.</p>
+                                                    <p>Try <b>FREE</b> for 30 days!</br>then <b>$5.99
+                                                            per month</b></p>
+                                                    <div class="button-holder-icon">
+                                                        <a class="btn" href="#">Learn more</a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <img src="Email-PSD-JPEG/image/Hand+Hub.png" class="icon-main2" alt='image'>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="clearfix"></div>
+                <tr>
+                    <td class="one-column">
+                        <table width="100%">
+                            <tr>
+                                <td class="inner-td">
+                                    <p class='center'>Email us at help@plugplayhub.com with any questions or ideas on
+                                        how to make
+                                        parenting in the digital age easiler.</p>
+                                    <p class='center'>Let's keep this discussion going!</p>
+                                    <p class='center'><b>Team Securly.</b> </br> The Student Safety Company</p>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <!--- End Second Column of Two Columns -->
+                </td>
+                <!--- End Two Column Section -->
+
+            </table>
+        </div>
+        <div class="wrapper-inner">
+            <!--- End Main Table -->
+            <div class="seperate"></div>
+            <!--- End Outer Table 2 -->
+            <table class="main-table rtable">
+                <tr>
+                    <td class="one-column">
+                        <table width="100%">
+                            <tr>
+                                <td class="inner-td text">
+                                    <p class="h1 center">Parenting in the Digital Age: Resources to Help</p>
+                                    <p class='center'><a href='#'>7 Tips On Keeping Your Child Safe Online</a></p>
+                                    <p class='center'><a href='#'>5 Myths and Truths About Kids' Internet Safety</a></p>
+                                    <p class='center'><a href='#'>A Parents' Ultimate Guide to Youtube</a></p>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <!--- End Two Column Section -->
+            </table>
+            <table class=''>
+                <!-- lllllll -->
+                <tr>
+                    <td class="two-column last-comp">
+                        <div class="section1">
+                            <table width="100%">
+                                <tr>
+                                    <td class="inner-td">
+                                        <table class="content">
+                                            <tr>
+                                                <td class="" align=''>
+                                                    <p class="logo-text">securly://</p>
+                                                    <p class='last-text'>Securly is the Student Safety Company serving
+                                                        families and
+                                                        K-12 schools throughout the U.S. </p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <!--- End First Column of Two Columns -->
+                        <div class="section1">
+                            <table width="100%">
+                                <tr>
+                                    <td class="inner-td">
+                                        <table class="content">
+                                            <tr>
+                                                <td class="" align=''>
+                                                    <p class="h2">Contact Us</p>
+                                                    <p class='last-text'>Support: <a href='mailto:help@securly.com'>help@securly.com</a></p>
+                                                    <p class='last-text'>Website: <a href='www.securly.com'>www.securly.com</a></p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <table class='icons' width='100%'>
+                            <tr align='center'>
+                                <td>
+                                    <a class='inlineb' href="#"><img src="facebooke.png" alt="facebook"></a>
+                                    <a class='inlineb' href="#"><img src="twiiter.png" alt="twitter"></a>
+                                    <a class='inlineb' href="#"><img src="googlep.png" alt="google plus"></a>
+                                    <a class='inlineb' href="#"><img src="emailicone.png" alt="email"></a>
+                                </td>
+                            </tr>
+                        </table>
+                        <div class="clearfix"></div>
+
+                        <!--- End Second Column of Two Columns -->
+                    </td>
+                </tr>
+                <!-- mmmmmmm -->
+            </table>
+        </div>
+        <div class="wrapper-inner">
+            <table class="main-table">
+                <tr>
+                    <td class="one-column">
+                        <table width="100%">
+                            <tr>
+                                <td class="footer">
+                                    <p class="footer">Securly, Inc., 111 N. Market Street Suite 400, San Jose, CA
+                                        95113, USA</p>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+            <div class="seperate"></div>
+        </div>
+
+        <!--- End Wrapper Inner -->
+    </div>
+    <!--- End Wrapper -->
+    <br>
+</body>
+
+</html>
